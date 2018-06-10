@@ -7,13 +7,14 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
+      offSpring: Offspring.offspring
     }
   }
 
   render() {
     return (
       <div className="App">
-        
+        <MasterHog offSpring={this.state.offSpring}/>
       </div>
     )
   }
